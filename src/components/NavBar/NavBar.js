@@ -1,13 +1,13 @@
 import React from 'react';
 import GlobalStyle from '../../themes/globalStyles';
 
-function Browse() {
+function NavBar() {
   return (
-    <div className="Browse">
+    <div className="NavBar">
       <GlobalStyle />
-      <h1>Browse</h1>
+      <h1>NavBar</h1>
     </div>
   );
 }
 
-export default Browse;
+export default NavBar;

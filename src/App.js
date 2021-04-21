@@ -1,16 +1,21 @@
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
-import GlobalStyle from './themes/globalStyles';
+
 import Dashboard from './components/Dashboard/Dashboard';
 import Browse from './components/Browse/Browse';
+import NavBar from './components/NavBar/NavBar';
 
 function App() {
   return (
-    <div className="App">
-      <GlobalStyle />
-      <Dashboard />
-      <Browse />
-      <h1>App</h1>
-    </div>
+    <Router>
+      <Route path="/">
+        <NavBar />
+      </Route>
+      <Switch>
+        <Route exact path="/dashboard" component={Dashboard} />
+        <Route exact path="/browse" component={Browse} />
+      </Switch>
+    </Router>
   );
 }
 
