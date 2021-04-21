@@ -15,7 +15,7 @@ const GlobalStyle = createGlobalStyle`
         align-items: center;
         justify-content: center;
         font-size: calc(10px + 2vmin);
-        color: white;
+        color: black;
     }
 `;
 
