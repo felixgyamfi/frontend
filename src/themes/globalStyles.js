@@ -18,17 +18,17 @@ const GlobalStyle = createGlobalStyle`
         padding: 0;
         background: #FFFFFF;
         font-family: Montserrat;
-        font-size: calc(10px + 1vw);
+        font-size: calc(.6rem + 1vw);
     }
 
     h1 {
-        font-size: 3.6rem;
-        color: #1D2A73;
+        font-size: 3.6em;
+        color: ${(props) => props.theme.midnightBlue};
     }
 
     h2 {
-        font-size: 2.4rem;
-        color: #1D2A73;
+        font-size: 2.4em;
+        color: ${(props) => props.theme.midnightBlue};
     }
 `;
 

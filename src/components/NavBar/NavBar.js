@@ -5,7 +5,7 @@ const WrapperNav = styled.div`
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  background: #f5ebdd;
+  background: ${(props) => props.theme.fairPink};
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -15,7 +15,7 @@ const WrapperNav = styled.div`
 
 const WrapperLink = styled.div`
   display: flex;
-  color: #1d2a73;
+  color: ${(props) => props.theme.midnightBlue};
   font-size: 1rem;
   letter-spacing: 0.2rem;
 `;
