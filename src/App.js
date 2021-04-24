@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 
 import GlobalStyle from './themes/globalStyles';
@@ -12,7 +12,6 @@ function App() {
     <Router>
       <GlobalStyle />
       <Route path="/">
-        <h1>App</h1>
         <NavBar />
       </Route>
       <Switch>

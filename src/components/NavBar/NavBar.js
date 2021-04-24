@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 import { NavLink } from './NavLink';
 
 const Nav = styled.div`
@@ -22,26 +21,14 @@ const Links = styled.div`
   height: 100%;
 `;
 
-const Li = styled.div`
-  display: flex;
-  flex-direction: column;
-  max-height: 2.5em;
-`;
-
 function NavBar() {
   return (
     <div>
       <Nav>
         <Links>
-          <Li to="#">
-            <NavLink />
-          </Li>
-          <Li to="#">
-            <NavLink />
-          </Li>
-          <Li to="#">
-            <NavLink />
-          </Li>
+          <NavLink />
+          <NavLink />
+          <NavLink />
         </Links>
       </Nav>
     </div>

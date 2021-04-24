@@ -13,11 +13,19 @@ const StyledLink = styled(Link)`
   color: ${(props) => props.theme.midnightBlue};
 `;
 
+const Li = styled.div`
+  display: flex;
+  flex-direction: column;
+  max-height: 2.5em;
+`;
+
 export function NavLink() {
   return (
-    <StyledLink>
-      <img src={homeLogo} alt="home" />
-      HOME
-    </StyledLink>
+    <Li to="/Dashboard">
+      <StyledLink>
+        <img src={homeLogo} alt="home" />
+        HOME
+      </StyledLink>
+    </Li>
   );
 }
