@@ -4,9 +4,6 @@ import { Link } from 'react-router-dom';
 import { NavLink } from './NavLink';
 
 const Nav = styled.div`
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
   background: ${(props) => props.theme.fairPink};
   position: fixed;
   bottom: 0;
@@ -15,21 +12,19 @@ const Nav = styled.div`
   padding: 1rem 5rem 0.2rem;
 `;
 
-const Links = styled.ul`
-  list-style-type: none;
+const Links = styled.div`
   display: flex;
   height: auto;
+  justify-content: space-between;
   color: ${(props) => props.theme.midnightBlue};
   font-size: 1rem;
   letter-spacing: 0.2rem;
   height: 100%;
 `;
 
-const Li = styled.li`
+const Li = styled.div`
   display: flex;
   flex-direction: column;
-  object-fit: contain;
-  padding: 0 3em;
   max-height: 2.5em;
 `;
 
