@@ -35,10 +35,6 @@ const GlobalStyle = createGlobalStyle`
         font-size: 1.2em;
         color: ${(props) => props.theme.midnightBlue};
     }
-
-    img {
-        width: 100%;
-    }
 `;
 
 export default GlobalStyle;

@@ -24,7 +24,7 @@ const Workout = styled.div`
   overflow: none;
 `;
 
-const ImgWrapper = styled.div`
+const ImgWrapper = styled.img`
   max-height: 21.5em;
   margin: 1em 0;
 `;
@@ -49,9 +49,7 @@ function Content() {
         <p>Trainingsplan</p>
       </Heading>
       <Workout>
-        <ImgWrapper>
-          <img src={Bg} alt="" />
-        </ImgWrapper>
+        <ImgWrapper src={Bg} alt="" />
         <WInfo>
           <WInfoTitle>
             Titel des Workouts
