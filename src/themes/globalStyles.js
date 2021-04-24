@@ -30,6 +30,11 @@ const GlobalStyle = createGlobalStyle`
         font-size: 2.4em;
         color: ${(props) => props.theme.midnightBlue};
     }
+
+    p {
+        font-size: 1.2em;
+        color: ${(props) => props.theme.midnightBlue};
+    }
 `;
 
 export default GlobalStyle;

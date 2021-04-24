@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import { NavLink } from './NavLink';
 
-const WrapperNav = styled.div`
+const Nav = styled.div`
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -13,20 +15,41 @@ const WrapperNav = styled.div`
   padding: 1rem 5rem 0.2rem;
 `;
 
-const WrapperLink = styled.div`
+const Links = styled.ul`
+  list-style-type: none;
   display: flex;
+  height: auto;
   color: ${(props) => props.theme.midnightBlue};
   font-size: 1rem;
   letter-spacing: 0.2rem;
+  height: 100%;
+`;
+
+const Li = styled.li`
+  display: flex;
+  flex-direction: column;
+  object-fit: contain;
+  padding: 0 3em;
+  max-height: 2.5em;
 `;
 
 function NavBar() {
   return (
-    <WrapperNav>
-      <WrapperLink>HOME</WrapperLink>
-      <WrapperLink>BROWSE</WrapperLink>
-      <WrapperLink>PROFIL</WrapperLink>
-    </WrapperNav>
+    <div>
+      <Nav>
+        <Links>
+          <Li to="#">
+            <NavLink />
+          </Li>
+          <Li to="#">
+            <NavLink />
+          </Li>
+          <Li to="#">
+            <NavLink />
+          </Li>
+        </Links>
+      </Nav>
+    </div>
   );
 }
 
