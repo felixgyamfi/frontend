@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 
 import GlobalStyle from './themes/globalStyles';
 
-import Dashboard from './components/Dashboard/Dashboard';
-import Browse from './components/Browse/Browse';
-import NavBar from './components/NavBar/NavBar';
+import Dashboard from './components/pages/Dashboard/Dashboard';
+import Browse from './components/pages/Browse/Browse';
+import NavBar from './components/organisms/NavBar/NavBar';
 
 function App() {
   return (

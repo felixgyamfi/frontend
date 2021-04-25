@@ -1,5 +1,5 @@
 import React from 'react';
-import GlobalStyle from '../../themes/globalStyles';
+import GlobalStyle from '../../../themes/globalStyles';
 
 function Browse() {
   return (

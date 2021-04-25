@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { NavLink } from './NavLink';
-import links from './links';
+import { NavLink } from '../../molecules/NavLink/NavLink';
+import links from './NavLinksData';
 
 const Nav = styled.div`
   background: ${(props) => props.theme.fairPink};
