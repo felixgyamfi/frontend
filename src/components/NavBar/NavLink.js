@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import homeLogo from './assets/icon--home.png';
 
 const StyledLink = styled(Link)`
   text-decoration: none;
@@ -19,12 +18,12 @@ const Li = styled.div`
   max-height: 2.5em;
 `;
 
-export function NavLink() {
+export function NavLink({ image, text, link }) {
   return (
-    <Li to="/Dashboard">
-      <StyledLink>
-        <img src={homeLogo} alt="home" />
-        HOME
+    <Li>
+      <StyledLink to={link}>
+        <img src={image} alt="home" />
+        {text}
       </StyledLink>
     </Li>
   );
