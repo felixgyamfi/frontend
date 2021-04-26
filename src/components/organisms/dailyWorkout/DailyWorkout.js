@@ -19,14 +19,11 @@ const Heading = styled.div`
 const Workout = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 21.5em;
-  overflow: none;
 `;
 
 const ImgWrapper = styled.img`
-  max-height: 21.5em;
   margin: 1em 0;
+  object-fit: contain;
 `;
 
 const WInfo = styled.div`
