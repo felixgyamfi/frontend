@@ -12,9 +12,9 @@ import {
   WInfoStats,
 } from './DailyWorkoutElements';
 
-export const HeadingStyled = () => {
+const Map = () => {
   const a = Data.map((e) => (
-    <div>
+    <>
       <HeadingWrapper>
         <h2>Dein Workout heute</h2>
         <p>{e.type}</p>
@@ -30,15 +30,15 @@ export const HeadingStyled = () => {
           <WInfoStats>{e.stats}</WInfoStats>
         </WInfo>
       </Workout>
-    </div>
+    </>
   ));
   return <div>{a}</div>;
 };
 
-export default function Section({ id, type, title, program, alt, stats }) {
+export default function mapDailyWorkout() {
   return (
-    <div>
-      <HeadingStyled />
-    </div>
+    <>
+      <Map />
+    </>
   );
 }
