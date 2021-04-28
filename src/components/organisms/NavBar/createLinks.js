@@ -12,7 +12,6 @@ export const createLinks = () => {
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
-    align-items: baseline;
     height: 100%;
     color: ${(props) => props.theme.midnightBlue};
   `;
