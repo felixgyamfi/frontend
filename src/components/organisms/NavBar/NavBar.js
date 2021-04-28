@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { NavLink } from '../../molecules/NavLink/NavLink';
-import links from './NavLinksData';
+import { createLinks as LinkList } from './createLinks';
 
 const Nav = styled.div`
   background: ${(props) => props.theme.fairPink};
@@ -21,23 +20,6 @@ const Links = styled.div`
   letter-spacing: 0.2rem;
   height: 100%;
 `;
-
-const LinkList = () => {
-  const a = links.map((link) => (
-    <NavLink text={link.text} image={link.image} link={link.link} />
-  ));
-  const StyledLink = styled.div`
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-    align-items: baseline;
-    height: 100%;
-    color: ${(props) => props.theme.midnightBlue};
-  `;
-
-  return <StyledLink>{a}</StyledLink>;
-};
 
 function NavBar() {
   return (

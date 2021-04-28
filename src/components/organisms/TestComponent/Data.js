@@ -1,15 +1,12 @@
-import image from './assets/img--dashboard-l.png';
-
-export const Content = [
+const Data = [
   {
     id: '0',
     type: 'Trainingsplan',
-    title: 'Titel des Workouts',
+    title: 'Titel des Wörkouts',
     program: 'Titel des Programms',
-    img: '',
     alt: 'Graphic of a person training',
     stats: 'XXX kcal · 26 Min. · Beweglichkeit',
   },
 ];
 
-export default Content;
+export default Data;

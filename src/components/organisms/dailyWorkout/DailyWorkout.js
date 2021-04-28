@@ -1,63 +1,11 @@
 import React from 'react';
-import styled from 'styled-components';
+import Content from './mapDailyWorkout';
+import { Wrapper } from './DailyWorkoutElements';
 
-import Bg from './assets/img--dashboard-l.png';
-
-const Wrapper = styled.div`
-  margin-top: 3.3em;
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
-`;
-
-const Heading = styled.div`
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-`;
-
-const Workout = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
-const ImgWrapper = styled.img`
-  margin: 1em 0;
-  object-fit: contain;
-`;
-
-const WInfo = styled.div`
-  color: ${(props) => props.theme.midnightBlue};
-`;
-
-const WInfoTitle = styled.p`
-  font-size: 1.6em;
-`;
-
-const WInfoStats = styled.p`
-  font-size: 1em;
-`;
-
-function Content() {
+export default function DailyWorkout() {
   return (
     <Wrapper>
-      <Heading>
-        <h2>Dein Workout heute</h2>
-        <p>Trainingsplan</p>
-      </Heading>
-      <Workout>
-        <ImgWrapper src={Bg} alt="" />
-        <WInfo>
-          <WInfoTitle>
-            Titel des Workouts
-            <br />
-            Titel des Programms
-          </WInfoTitle>
-          <WInfoStats>XXX kcal · 26 Min. · Beweglichkeit</WInfoStats>
-        </WInfo>
-      </Workout>
+      <Content />
     </Wrapper>
   );
 }
-
-export default Content;
