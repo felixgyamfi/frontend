@@ -2,7 +2,6 @@ import React from 'react';
 import Daily from './Data';
 
 import {
-  Wrapper,
   HeadingWrapper,
   Workout,
   ImgWrapper,

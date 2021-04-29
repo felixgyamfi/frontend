@@ -1,14 +1,25 @@
 import React from 'react';
-import Test from '../../organisms/TestComponent/TestComponent.js';
-import GlobalStyle from '../../../themes/globalStyles';
+import styled from 'styled-components';
+import ProgramCard from '../../molecules/ProgramCard/ProgramCard';
+import ProgramCards from './mapProgram';
+
+const WrapperBrowse = styled.div`
+  padding: 7.5em 1.7em 0;
+`;
+
+const Filter = styled.div`
+  margin: 2.5em 0;
+`;
 
 function Browse() {
   return (
-    <div className="Browse">
-      <GlobalStyle />
-      <Test />
-      <h1>Browse</h1>
-    </div>
+    <WrapperBrowse className="Browse">
+      <h2>Browse</h2>
+      <Filter>
+        <p>Filter</p>
+      </Filter>
+      <ProgramCards />
+    </WrapperBrowse>
   );
 }
 
