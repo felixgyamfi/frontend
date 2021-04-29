@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import NavBar from '../../molecules/NavBar/index';
 import Content from '../../organisms/DailyWorkout/index.js';
 import { WelcomeHead } from '../../atoms/header/WelcomeHead/WelcomeHead';
 
@@ -10,10 +10,13 @@ const WrapperDash = styled.div`
 
 function Dashboard() {
   return (
-    <WrapperDash className="Dashboard">
-      <WelcomeHead />
-      <Content />
-    </WrapperDash>
+    <>
+      <WrapperDash className="Dashboard">
+        <WelcomeHead />
+        <Content />
+      </WrapperDash>
+      <NavBar />
+    </>
   );
 }
 

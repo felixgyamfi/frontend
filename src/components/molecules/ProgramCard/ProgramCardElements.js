@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
-export const Wrapper = styled.div`
+export const Wrapper = styled(Link)`
   background: ${(props) => props.theme.fairPink};
   height: 21.5em;
   display: flex;
@@ -8,6 +9,7 @@ export const Wrapper = styled.div`
   padding: 1.2em 1.6em;
   border-radius: 5px;
   margin: 1em 0;
+  text-decoration: none;
 
   &:hover {
     background: ${(props) => props.theme.summerSky};

@@ -6,9 +6,9 @@ import {
   CardNotification,
 } from './ProgramCardElements';
 
-function ProgramCard({ title, type }) {
+function ProgramCard({ title, type, id }) {
   return (
-    <Wrapper>
+    <Wrapper to={`program/${id}`}>
       <HeartLink />
       <ProgramTitleWrap>
         <ProgramTitle>{title}</ProgramTitle>
