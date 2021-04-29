@@ -1,5 +1,5 @@
-import ProgramData from './ProgramData';
-import HeartLink from '../../atoms/HeartLink/HeartLink';
+import Data from '../../atoms/Data/ProgramData';
+import HeartLink from '../../atoms/Links/HeartLink/HeartLink';
 import {
   Wrapper,
   ProgramTitleWrap,
@@ -8,7 +8,7 @@ import {
 } from '../../molecules/ProgramCard/ProgramCardElements';
 
 const mapProgram = () => {
-  const a = ProgramData.map(({ type, title }) => (
+  const a = Data.map(({ type, title }) => (
     <>
       <Wrapper>
         <HeartLink />

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { NavLink } from '../../atoms/NavLink/NavLink';
-import links from './Data';
+import { NavLink } from '../../atoms/Links/NavLink/NavLink';
+import links from '../../atoms/Data/NavLinksData';
 
 export const createLinks = () => {
   const a = links.map((link) => (

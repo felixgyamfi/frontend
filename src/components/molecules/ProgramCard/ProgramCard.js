@@ -1,5 +1,5 @@
 import React from 'react';
-import HeartLink from '../../atoms/HeartLink/HeartLink';
+import HeartLink from '../../atoms/Links/HeartLink/HeartLink';
 import {
   Wrapper,
   ProgramTitleWrap,

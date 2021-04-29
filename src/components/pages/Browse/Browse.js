@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import ProgramCard from '../../molecules/ProgramCard/ProgramCard';
-import ProgramCards from './mapProgram';
+import ContentCards from './mapContentCards';
 
 const WrapperBrowse = styled.div`
   padding: 7.5em 1.7em 0;
@@ -18,7 +17,7 @@ function Browse() {
       <Filter>
         <p>Filter</p>
       </Filter>
-      <ProgramCards />
+      <ContentCards />
     </WrapperBrowse>
   );
 }
