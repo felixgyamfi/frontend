@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Content from '../../organisms/dailyWorkout/index.js';
+import Content from '../../organisms/DailyWorkout/index.js';
 import { WelcomeHead } from '../../atoms/header/WelcomeHead/WelcomeHead';
 
 const WrapperDash = styled.div`

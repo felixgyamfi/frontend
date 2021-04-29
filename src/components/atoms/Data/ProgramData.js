@@ -2,7 +2,7 @@ const Data = [
   {
     id: '0',
     type: 'Neu',
-    title: 'ABS-olutely',
+    title: 'ABS-olutely 💯',
   },
   {
     id: '1',
@@ -22,7 +22,7 @@ const Data = [
   {
     id: '4',
     type: 'Neu',
-    title: 'Halb Berg Halb Mensch',
+    title: 'Halb Berg, Halb Mensch',
   },
 ];
 

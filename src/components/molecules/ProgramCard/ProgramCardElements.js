@@ -8,6 +8,10 @@ export const Wrapper = styled.div`
   padding: 1.2em 1.6em;
   border-radius: 5px;
   margin: 1em 0;
+
+  &:hover {
+    background: ${(props) => props.theme.summerSky};
+  }
 `;
 export const ProgramTitleWrap = styled.div`
   display: flex;

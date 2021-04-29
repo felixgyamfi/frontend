@@ -4,8 +4,8 @@ export const Data = [
   {
     id: '0',
     type: 'Trainingsplan',
-    title: 'Rücken & Beine',
-    program: 'Geile Beine',
+    title: '3-Monate-Luft-Anhalten-Challenge',
+    program: 'Astronautentraining',
     img: image,
     alt: 'Graphic of a person training',
     calories: '5600',
