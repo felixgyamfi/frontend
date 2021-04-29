@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import ContentCards from './mapContentCards';
 
 const WrapperBrowse = styled.div`
-  padding: 7.5em 1.7em 0;
+  padding: 7.5em 1.7em 7em;
 `;
 
 const Filter = styled.div`

@@ -1,4 +1,3 @@
-import React from 'react';
 import HeartLink from '../../atoms/Links/HeartLink/HeartLink';
 import {
   Wrapper,
@@ -7,17 +6,15 @@ import {
   CardNotification,
 } from './ProgramCardElements';
 
-function ProgramCard() {
+function ProgramCard({ title, type }) {
   return (
-    <>
-      <Wrapper>
-        <HeartLink />
-        <ProgramTitleWrap>
-          <ProgramTitle>100 Sit-ups Challenge</ProgramTitle>
-        </ProgramTitleWrap>
-        <CardNotification>Neu</CardNotification>
-      </Wrapper>
-    </>
+    <Wrapper>
+      <HeartLink />
+      <ProgramTitleWrap>
+        <ProgramTitle>{title}</ProgramTitle>
+      </ProgramTitleWrap>
+      <CardNotification>{type}</CardNotification>
+    </Wrapper>
   );
 }
 

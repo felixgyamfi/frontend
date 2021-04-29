@@ -1,22 +1,10 @@
 import Data from '../../atoms/Data/ProgramData';
-import HeartLink from '../../atoms/Links/HeartLink/HeartLink';
-import {
-  Wrapper,
-  ProgramTitleWrap,
-  ProgramTitle,
-  CardNotification,
-} from '../../molecules/ProgramCard/ProgramCardElements';
+import ProgramCard from '../../molecules/ProgramCard/index';
 
 const mapProgram = () => {
   const a = Data.map(({ type, title }) => (
     <>
-      <Wrapper>
-        <HeartLink />
-        <ProgramTitleWrap>
-          <ProgramTitle>{title}</ProgramTitle>
-        </ProgramTitleWrap>
-        <CardNotification>{type}</CardNotification>
-      </Wrapper>
+      <ProgramCard type={type} title={title} />
     </>
   ));
   return <div>{a}</div>;
