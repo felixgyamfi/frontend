@@ -10,7 +10,7 @@ const WrapperDash = styled.div`
 
 function Dashboard() {
   return (
-    <WrapperDash>
+    <WrapperDash className="Dashboard">
       <WelcomeHead />
       <Content />
     </WrapperDash>

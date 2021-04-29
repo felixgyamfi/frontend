@@ -1,15 +1,17 @@
 import image from './assets/img--dashboard-l.png';
 
-export const Content = [
+export const Data = [
   {
     id: '0',
     type: 'Trainingsplan',
-    title: 'Titel des Workouts',
-    program: 'Titel des Programms',
-    img: '',
+    title: 'Rücken & Beine',
+    program: 'Geile Beine',
+    img: image,
     alt: 'Graphic of a person training',
-    stats: 'XXX kcal · 26 Min. · Beweglichkeit',
+    calories: '5600',
+    duration: '26',
+    flexibility: '70%',
   },
 ];
 
-export default Content;
+export default Data;

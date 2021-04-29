@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { NavLink } from '../../molecules/NavLink/NavLink';
+import { NavLink } from '../../atoms/NavLink/NavLink';
 import links from './Data';
 
 export const createLinks = () => {

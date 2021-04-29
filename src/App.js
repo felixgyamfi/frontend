@@ -5,7 +5,7 @@ import GlobalStyle from './themes/globalStyles';
 
 import Dashboard from './components/pages/Dashboard/Dashboard';
 import Browse from './components/pages/Browse/Browse';
-import NavBar from './components/organisms/NavBar/NavBar';
+import NavBar from './components/molecules/NavBar/NavBar';
 
 function App() {
   return (

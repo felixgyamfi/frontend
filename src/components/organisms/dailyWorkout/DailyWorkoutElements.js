@@ -11,9 +11,7 @@ export const HeadingWrapper = styled.div`
   align-items: baseline;
   justify-content: space-between;
 `;
-export const Type = styled.p`
-  font;
-`;
+export const Type = styled.p``;
 export const Workout = styled.div`
   display: flex;
   flex-direction: column;
