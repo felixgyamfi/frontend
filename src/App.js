@@ -14,6 +14,7 @@ function App() {
         <GlobalStyle />
         <Switch>
           <Route path="/" exact component={Dashboard} />
+          <Route path="/Dashboard" component={Dashboard} />
           <Route path="/browse" component={Browse} />
           <Route path="/program/:id" component={Program} />
         </Switch>

@@ -5,15 +5,13 @@ export const Nav = styled.div`
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 5rem;
-  padding: 1rem 5rem 0.2rem;
+  display: flex;
+  padding-top: 1rem;
+  align-items: center;
+  justify-content: space-between;
 `;
 export const Links = styled.div`
+  width: 100%;
   display: flex;
-  height: auto;
-  align-items: flex-start;
-  color: ${(props) => props.theme.midnightBlue};
-  font-size: 1rem;
-  letter-spacing: 0.2rem;
-  height: 100%;
+  justify-content: space-between;
 `;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Li, StyledLink, IconWrap, Icon } from './NavLinkElements';
+import { Li, StyledLink, IconWrap, Icon, LinkText } from './NavLinkElements';
 
 export function NavLink({ image, text, link }) {
   return (
@@ -8,7 +8,7 @@ export function NavLink({ image, text, link }) {
         <IconWrap>
           <Icon src={image} alt="home" />
         </IconWrap>
-        {text}
+        <LinkText>{text}</LinkText>
       </StyledLink>
     </Li>
   );
