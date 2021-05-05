@@ -1,21 +1,38 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const ItemWrapper = styled.div`
+  display: flex;
+  margin-left: 3rem;
+`;
+
+const RoundedCircle = styled.span`
+  height: 1.4rem;
+  width: 1.4rem;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+`;
 
 function ChartItem() {
   return (
-    <div>
-      <div>Farbe</div>
+    <ItemWrapper>
+      <RoundedCircle />
       <p>Krafttraining</p>
-    </div>
+    </ItemWrapper>
   );
 }
+
+const ItemsWrapper = styled.div``;
+
 function ChartItems() {
   return (
-    <div>
+    <ItemsWrapper>
       <ChartItem />
       <ChartItem />
       <ChartItem />
       <ChartItem />
-    </div>
+    </ItemsWrapper>
   );
 }
 
