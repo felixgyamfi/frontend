@@ -6,6 +6,7 @@ import {
   ImgWrapper,
   WInfo,
   WInfoTitle,
+  WInfoProgram,
   WInfoStats,
 } from './DailyWorkoutElements';
 
@@ -28,11 +29,8 @@ function DailyWorkoutNew({
       <Workout>
         <ImgWrapper src={img} alt={alt} />
         <WInfo>
-          <WInfoTitle>
-            {title}
-            <br />
-            {program}
-          </WInfoTitle>
+          <WInfoTitle>{title}</WInfoTitle>
+          <WInfoProgram>{program}</WInfoProgram>
           <WInfoStats>
             {calories} kcal · {duration} Min. · Beweglichkeit {flexibility}
           </WInfoStats>

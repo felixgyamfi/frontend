@@ -10,7 +10,7 @@ import {
 function ProgramHeader({ title }) {
   return (
     <Header>
-      <Close />
+      <Close href="/browse" />
       <ProgramTitle>
         <h1>{title}</h1>
       </ProgramTitle>

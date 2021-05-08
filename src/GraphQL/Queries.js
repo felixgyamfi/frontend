@@ -9,6 +9,12 @@ export const GET_WORKOUTS = gql`
         Workout {
           title
           calories
+          image {
+            asset {
+              originalFilename
+              url
+            }
+          }
         }
       }
     }

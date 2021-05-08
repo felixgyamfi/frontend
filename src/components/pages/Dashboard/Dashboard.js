@@ -1,12 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import { gql, useQuery } from '@apollo/client';
+import { useQuery } from '@apollo/client';
 
 import NavBar from '../../molecules/NavBar/index';
 import DailyWorkoutNEW from '../../organisms/DailyWorkout/DailyWorkoutNEW';
 import { WelcomeHead } from '../../atoms/header/WelcomeHead/WelcomeHead';
 
-import dashData from '../../organisms/DailyWorkout/Data';
 import { GET_WORKOUTS } from '../../../GraphQL/Queries';
 
 const WrapperDash = styled.div`
@@ -15,19 +14,28 @@ const WrapperDash = styled.div`
 
 function Dashboard() {
   const { error, loading, data } = useQuery(GET_WORKOUTS);
-  console.log(data);
+  const serverData = data;
+  console.log(serverData);
 
   if (loading) {
     <>
       <WrapperDash className="Dashboard">
         <WelcomeHead />
-        <div>loading...</div>
+        <h1>loading...</h1>
       </WrapperDash>
       <NavBar />
     </>;
   }
 
-  const serverData = data.allProgram;
+  if (error) {
+    <>
+      <WrapperDash className="Dashboard">
+        <WelcomeHead />
+        <h1>Error...</h1>
+      </WrapperDash>
+      <NavBar />
+    </>;
+  }
 
   return (
     <>
@@ -35,12 +43,16 @@ function Dashboard() {
         <WelcomeHead />
         <DailyWorkoutNEW
           type="Trainingsplan"
-          alt={serverData.alt}
-          title={serverData.title}
-          program={serverData[0].title}
-          calories={serverData[0].workouts[0].Workout.calories}
-          duration={serverData.duration}
-          flexibility={serverData.flexibility}
+          alt={
+            serverData?.allProgram[0].workouts[0].Workout.image.asset
+              .originalFilename
+          }
+          img={serverData?.allProgram[0].workouts[0].Workout.image.asset.url}
+          title={serverData?.allProgram[0].workouts[0].Workout.title}
+          program={serverData?.allProgram[0].title}
+          calories={serverData?.allProgram[0].workouts[0].Workout.calories}
+          duration={serverData?.allProgram.duration}
+          flexibility={serverData?.allProgram.flexibility}
         />
       </WrapperDash>
       <NavBar />

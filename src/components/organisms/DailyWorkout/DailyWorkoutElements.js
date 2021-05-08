@@ -24,7 +24,10 @@ export const WInfo = styled.div`
   color: ${(props) => props.theme.midnightBlue};
 `;
 export const WInfoTitle = styled.p`
-  font-size: 1.6em;
+  font-size: 1.8em;
+`;
+export const WInfoProgram = styled.p`
+  font-weight: 700;
 `;
 export const WInfoStats = styled.p`
   font-size: 1em;
