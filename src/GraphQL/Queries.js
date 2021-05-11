@@ -20,3 +20,23 @@ export const GET_WORKOUTS = gql`
     }
   }
 `;
+
+export const GET_PROGRAM = gql`
+  query {
+    allProgram {
+      title
+      focus
+      difficulty
+      duration
+      description
+      workouts {
+        Workout {
+          title
+          calories
+          categories
+          duration
+        }
+      }
+    }
+  }
+`;

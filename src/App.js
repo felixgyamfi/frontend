@@ -10,7 +10,7 @@ import Program from './components/pages/Program/Program';
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div>
         <GlobalStyle />
         <Switch>
           <Route path="/" exact component={Dashboard} />

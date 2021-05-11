@@ -15,26 +15,29 @@ const WrapperDash = styled.div`
 function Dashboard() {
   const { error, loading, data } = useQuery(GET_WORKOUTS);
   const serverData = data;
-  console.log(serverData);
 
   if (loading) {
-    <>
-      <WrapperDash className="Dashboard">
-        <WelcomeHead />
-        <h1>loading...</h1>
-      </WrapperDash>
-      <NavBar />
-    </>;
+    return (
+      <>
+        <WrapperDash className="Dashboard">
+          <WelcomeHead />
+          <h3>loading...</h3>
+        </WrapperDash>
+        <NavBar />
+      </>
+    );
   }
 
   if (error) {
-    <>
-      <WrapperDash className="Dashboard">
-        <WelcomeHead />
-        <h1>Error...</h1>
-      </WrapperDash>
-      <NavBar />
-    </>;
+    return (
+      <>
+        <WrapperDash className="Dashboard">
+          <WelcomeHead />
+          <h3>Error...</h3>
+        </WrapperDash>
+        <NavBar />
+      </>
+    );
   }
 
   return (
