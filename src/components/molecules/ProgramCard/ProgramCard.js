@@ -6,7 +6,8 @@ import {
   CardNotification,
 } from './ProgramCardElements';
 
-function ProgramCard({ title, type, id }) {
+const ProgramCard = ({ program }) => {
+  const { title, type, id } = program;
   return (
     <Wrapper to={`program/${id}`}>
       <HeartLink />
@@ -16,6 +17,6 @@ function ProgramCard({ title, type, id }) {
       <CardNotification>{type}</CardNotification>
     </Wrapper>
   );
-}
+};
 
 export default ProgramCard;

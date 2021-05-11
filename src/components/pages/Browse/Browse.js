@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import NavBar from '../../molecules/NavBar/index';
-import ContentCards from './mapContentCards';
+import ContentCards from './mapBrowse';
 
 const WrapperBrowse = styled.div`
   padding: 7.5em 1.7em 7em;
