@@ -15,8 +15,8 @@ const WrapperProgram = styled.div`
 
 function Program({ match }) {
   const { id } = match.params;
-  const { error, loading, data } = useQuery(GET_PROGRAM, { variables: { id } });
-  console.log(data);
+  const { error, loading, data } = useQuery(GET_PROGRAM);
+  console.log(id);
 
   if (loading) {
     return (
@@ -29,7 +29,6 @@ function Program({ match }) {
     );
   }
   if (error) {
-    console.log(error);
     return (
       <>
         <WrapperProgram className="Program">
@@ -44,12 +43,12 @@ function Program({ match }) {
     <>
       <WrapperProgram className="Program">
         <ProgramHeader
-          title={data?.Program?.title}
-          categories={data?.Program?.focus}
-          difficulty={data?.Program?.difficulty}
-          duration={data?.Program?.duration}
+          title={data?.allProgram[id].title}
+          categories={data?.allProgram[id].focus}
+          difficulty={data?.allProgram[id].difficulty}
+          duration={data?.allProgram[id].duration}
         />
-        <SectionDescription description={data?.Program?.description} />
+        <SectionDescription />
         <SectionChart />
       </WrapperProgram>
       <NavBar />

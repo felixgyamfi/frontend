@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import CloseIcon from './assets/icon--x_close.png';
 
-export const Link = styled.a``;
+export const Button = styled(Link)``;
 
 export const Wrapper = styled.div`
   display: flex;
@@ -10,12 +11,12 @@ export const Wrapper = styled.div`
   width: 100%;
 `;
 
-function CloseButton({ href }) {
+function CloseButton({ to }) {
   return (
     <Wrapper>
-      <Link href={href}>
+      <Button to={to}>
         <img src={CloseIcon} alt="Close Button" />
-      </Link>
+      </Button>
     </Wrapper>
   );
 }
