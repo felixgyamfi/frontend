@@ -14,7 +14,6 @@ const WrapperDash = styled.div`
 
 function Dashboard() {
   const { error, loading, data } = useQuery(GET_WORKOUTS);
-  const serverData = data;
 
   if (loading) {
     return (
@@ -47,15 +46,14 @@ function Dashboard() {
         <DailyWorkoutNEW
           type="Trainingsplan"
           alt={
-            serverData?.allProgram[0].workouts[0].Workout.image.asset
-              .originalFilename
+            data?.allProgram[0].workouts[0].Workout.image.asset.originalFilename
           }
-          img={serverData?.allProgram[0].workouts[0].Workout.image.asset.url}
-          title={serverData?.allProgram[0].workouts[0].Workout.title}
-          program={serverData?.allProgram[0].title}
-          calories={serverData?.allProgram[0].workouts[0].Workout.calories}
-          duration={serverData?.allProgram.duration}
-          flexibility={serverData?.allProgram.flexibility}
+          img={data?.allProgram[0].workouts[0].Workout.image.asset.url}
+          title={data?.allProgram[0].workouts[0].Workout.title}
+          program={data?.allProgram[0].title}
+          calories={data?.allProgram[0].workouts[0].Workout.calories}
+          duration={data?.allProgram[0].workouts[0].Workout.duration}
+          flexibility={data?.allProgram.flexibility}
         />
       </WrapperDash>
       <NavBar />
