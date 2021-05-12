@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import GlobalStyle from './themes/globalStyles';
 
@@ -10,13 +10,13 @@ import Program from './components/pages/Program/Program';
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div>
         <GlobalStyle />
         <Switch>
           <Route path="/" exact component={Dashboard} />
           <Route path="/Dashboard" component={Dashboard} />
           <Route path="/browse" component={Browse} />
-          <Route path="/program/:id" component={Program} />
+          <Route path="/program/:slug" component={Program} />
         </Switch>
       </div>
     </Router>

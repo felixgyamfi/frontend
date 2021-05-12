@@ -7,25 +7,25 @@ import {
   InfoText,
 } from './ProgramHeaderElements';
 
-function ProgramHeader({ title }) {
+function ProgramHeader({ title, categories, difficulty, duration }) {
   return (
     <Header>
-      <Close />
+      <Close href="/browse" />
       <ProgramTitle>
         <h1>{title}</h1>
       </ProgramTitle>
       <InfoWrap>
         <div>
           <img src="" alt="" />
-          <InfoText>Abnehmen</InfoText>
+          <InfoText>{categories}</InfoText>
         </div>
         <div>
           <img src="" alt="" />
-          <InfoText>Leicht</InfoText>
+          <InfoText>{difficulty}</InfoText>
         </div>
         <div>
           <img src="" alt="" />
-          <InfoText>6 Wochen</InfoText>
+          <InfoText>{duration} Wochen</InfoText>
         </div>
       </InfoWrap>
     </Header>
