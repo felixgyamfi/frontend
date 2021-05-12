@@ -7,15 +7,17 @@ import SectionDescription from '../../molecules/sections/SectionDescription/Sect
 import SectionChart from '../../molecules/sections/SectionChart/SectionChart';
 import ProgramHeader from '../../atoms/header/ProgramHeader/ProgramHeader';
 
-import { GET_PROGRAM } from '../../../GraphQL/Queries';
+import { GET_PROGRAM_BY_SLUG } from '../../../GraphQL/Queries';
 
 const WrapperProgram = styled.div`
   padding: 0 0 7em;
 `;
 
 function Program({ match }) {
-  const { id } = match.params;
-  const { error, loading, data } = useQuery(GET_PROGRAM, { variables: { id } });
+  const { slug } = match.params;
+  const { error, loading, data } = useQuery(GET_PROGRAM_BY_SLUG, {
+    variables: { slug },
+  });
   console.log(data);
 
   if (loading) {
@@ -29,7 +31,6 @@ function Program({ match }) {
     );
   }
   if (error) {
-    console.log(error);
     return (
       <>
         <WrapperProgram className="Program">
@@ -44,12 +45,12 @@ function Program({ match }) {
     <>
       <WrapperProgram className="Program">
         <ProgramHeader
-          title={data?.Program?.title}
-          categories={data?.Program?.focus}
-          difficulty={data?.Program?.difficulty}
-          duration={data?.Program?.duration}
+          title={data?.allProgram[0]?.title}
+          categories={data?.allProgram[0]?.focus}
+          difficulty={data?.allProgram[0]?.difficulty}
+          duration={data?.allProgram[0]?.duration}
         />
-        <SectionDescription description={data?.Program?.description} />
+        <SectionDescription description={data?.allProgram[0]?.description} />
         <SectionChart />
       </WrapperProgram>
       <NavBar />

@@ -31,6 +31,33 @@ export const GET_ALLPROGRAM = gql`
       difficulty
       duration
       description
+      slug {
+        current
+      }
+      workouts {
+        Workout {
+          title
+          calories
+          categories
+          duration
+        }
+      }
+    }
+  }
+`;
+
+export const GET_PROGRAM_BY_SLUG = gql`
+  query($slug: String!) {
+    allProgram(where: { slug: { current: { eq: $slug } } }) {
+      _id
+      title
+      focus
+      difficulty
+      duration
+      description
+      slug {
+        current
+      }
       workouts {
         Workout {
           title

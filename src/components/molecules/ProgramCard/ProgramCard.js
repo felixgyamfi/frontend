@@ -7,10 +7,10 @@ import {
 } from './ProgramCardElements';
 
 const ProgramCard = ({ program }) => {
-  const { title, type, _id } = program;
+  const { title, type, slug } = program;
   console.log(program);
   return (
-    <Wrapper to={`program/${_id}`}>
+    <Wrapper to={`program/${slug.current}`}>
       <HeartLink />
       <ProgramTitleWrap>
         <ProgramTitle>{title}</ProgramTitle>
