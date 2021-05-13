@@ -10,7 +10,7 @@ import {
 function ProgramHeader({ title, categories, difficulty, duration }) {
   return (
     <Header>
-      <Close href="/browse" />
+      <Close to="/browse" />
       <ProgramTitle>
         <h1>{title}</h1>
       </ProgramTitle>
