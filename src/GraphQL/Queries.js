@@ -5,7 +5,6 @@ export const GET_WORKOUTS = gql`
     allProgram {
       title
       workouts {
-        week
         Workout {
           title
           calories
