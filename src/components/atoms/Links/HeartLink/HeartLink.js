@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import HeartIcon from './assets/icon--heart.png';
+import HeartIcon from './assets/icon--heart.svg';
 
 const Wrapper = styled.div`
   display: flex;

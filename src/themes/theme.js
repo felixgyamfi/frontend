@@ -11,3 +11,5 @@ export const davysGrey = '#7A8778'; // grey-green
 export const pewter = '#939C91'; // lighter grey-green
 export const rainee = '#BBC8B9'; // even lighter grey-green
 export const ottoman = '#D2DDD0'; // very light grey-green
+
+export const white = '#FFFFFF'; // white

@@ -8,6 +8,7 @@ import SectionChart from '../../molecules/sections/SectionChart/SectionChart';
 import ProgramHeader from '../../atoms/header/ProgramHeader/ProgramHeader';
 
 import { GET_PROGRAM_BY_SLUG } from '../../../GraphQL/Queries';
+import SectionProgramDetail from '../../molecules/sections/SectionProgramDetails/SectionProgramDetail';
 
 const WrapperProgram = styled.div`
   padding: 0 0 7em;
@@ -52,6 +53,7 @@ function Program({ match }) {
         />
         <SectionDescription description={data?.allProgram[0]?.description} />
         <SectionChart />
+        <SectionProgramDetail />
       </WrapperProgram>
       <NavBar />
     </>

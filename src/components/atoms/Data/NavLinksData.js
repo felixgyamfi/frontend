@@ -1,6 +1,6 @@
-import homeLogo from '../../molecules/NavBar/assets/icon--home.png';
-import browseLogo from '../../molecules/NavBar/assets/icon--browse.png';
-import profileLogo from '../../molecules/NavBar/assets/icon--profile.png';
+import homeLogo from '../../molecules/NavBar/assets/icon--home.svg';
+import browseLogo from '../../molecules/NavBar/assets/icon--browse.svg';
+import profileLogo from '../../molecules/NavBar/assets/icon--profile.svg';
 
 const Links = [
   { id: '0', text: 'home', image: homeLogo, link: '/dashboard' },
